@@ -18,8 +18,8 @@ class Address(BaseModel):
 
 
 try:
-    address= {'city':'hyderabad', 'pincode':'500050'}
-    user = {'user_id':'45','name' : 'Sashreek', 'email' : 'Sashreek@email.com', 'age' : 20, 'address':address, 'is_premium':False}
+    address= {'city':'hyd', 'pincode':'500050'}
+    user = {'user_id':'45','name' : 'Sashreek', 'email' : 'sashreek@gmail.com', 'age' : 20, 'address':address, 'is_premium':'0'}
     User1 = User(**user)
     print(User1)
 
