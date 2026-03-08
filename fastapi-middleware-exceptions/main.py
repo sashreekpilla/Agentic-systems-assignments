@@ -15,10 +15,13 @@ def hello():
 async def first_middleware(request: Request, call_next):
 
     print("Message before the request is processed")
-
+   
     response = await call_next(request)
 
     print("Message after the request is processed")
+
+    print ("Path:", request.url.path)
+    print ("Method:",request.method)
 
     return response
 
@@ -31,5 +34,5 @@ async def custom_404_handler(request: Request, exc: HTTPException):
         status_code=status.HTTP_404_NOT_FOUND,
         content={
             "message": "The requested resource was not found."
-        },
+        }
     )
