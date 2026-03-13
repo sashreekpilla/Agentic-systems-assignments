@@ -1,0 +1,33 @@
+Agent frameworks are necessary to be able to build AI agents effectively, quickly and in a scalable format.
+With the inbuild structure and components, it reduces the complexity of the AI agent. The framework lets
+communication between AI agents or Humans easier.
+
+characteristics of frameworks-
+1. LangChain- Can be used for basic Autonomous tasks. It is single chain task process
+UseCase- Chat bots, Q&A bots.
+
+2. LangGraph - Each node in the workflow is connected like a graph where each process 
+has a clear outcome. It Can be used for complex tasks. the process can be branched to serve different 
+outcomes.
+UseCase- can be used in places where each node has a connection with other.
+
+3. CrewAI- It is inspired by real world team structure where each agent has a role in the overall outcome.
+this is used for building Autonomous multi-agent systems. This is a no-code Agent builder that builds 
+visually.
+UseCase - works well with corporate like structure
+
+4. AutoGen - It allows agents build on python and .NET to interoperate. it can easily switch between LLMs.
+This is an Autonomous multi agent system where agents are working together to solve a complex task.
+UseCase - works well with microsoft agents.
+
+5.Google ADK -Open-source framework for developing and deploying modular and flexible AI agents.
+It is compatible with other frameworks.
+UseCase - works well with google ecosystem
+
+6. Vercel AI SDK - Open source library that helps with conversational, streaming and chat user interfaces.
+UseCase - Supports with Java script and Type scrpit based applications.
+
+7. N8N - Quite easy to use. visual tool for low- code/ no-code based AI development. can connect to 
+several nodes, APIs and LLMs.
+UseCase - can be used by teams with low coding experience.
+
