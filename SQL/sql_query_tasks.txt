@@ -1,0 +1,46 @@
+CREATE TABLE orders (
+    order_id INT PRIMARY KEY,
+    user_id INT,
+    product_name VARCHAR(100),
+    status VARCHAR(50),
+    amount INT
+);
+
+INSERT INTO orders VALUES
+(1, 101, 'Laptop', 'Delivered', 55000),
+(2, 102, 'Phone', 'Pending', 20000),
+(3, 101, 'Keyboard', 'Delivered', 1500);
+
+INSERT INTO orders VALUES
+(4, 103, 'Monitor', 'Cancelled', 12000),
+(5, 101, 'Mouse', 'Delivered', 700),
+(6, 101, 'Headphones', 'Pending', 2500),
+(7, 102, 'Tablet', 'Delivered', 18000);
+
+SELECT * FROM orders;
+
+SELECT * FROM orders
+WHERE user_id = 101;
+
+SELECT order_id, product_name, amount
+FROM orders;
+
+SELECT * FROM orders
+ORDER BY amount DESC;
+
+SELECT * FROM orders
+WHERE status = 'Delivered'
+ORDER BY amount ASC;
+
+SELECT order_id, product_name, amount
+FROM orders
+WHERE user_id = 101
+ORDER BY order_id DESC
+LIMIT 5;
+
+UPDATE orders
+SET status = 'Delivered'
+WHERE order_id = 2;
+
+DELETE FROM orders
+WHERE order_id = 4;
