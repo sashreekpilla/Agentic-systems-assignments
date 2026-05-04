@@ -1,0 +1,9 @@
+# Python virtual environment
+venv/
+
+# ChromaDB vector storage
+chroma_hr_policy_db/
+
+# Environment variables and secrets
+.env
+
