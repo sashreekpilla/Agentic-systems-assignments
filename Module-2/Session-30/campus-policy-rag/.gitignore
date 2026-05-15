@@ -1,0 +1,8 @@
+# Python virtual environment
+venv/
+
+# ChromaDB vector storage
+campus_policy_chroma_db/
+
+# Environment variables and secrets
+.env
