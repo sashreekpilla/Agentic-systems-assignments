@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Aarav Mehta - Resume</title>
+<style>
+  body {
+    font-family: system-ui, -apple-system, Arial, Helvetica, sans-serif;
+    background:#f8fafc;
+    margin:0;
+    display:flex;
+    justify-content:center;
+    padding:20px;
+  }
+  .resume {
+    max-width:900px;
+    width:100%;
+  }
+  .header {
+    text-align:center;
+    padding:20px 0;
+    border-bottom:2px solid #2563eb;
+  }
+  .header h1{
+    margin:0;
+    font-size:2.2rem;
+    color:#111;
+  }
+  .header .tagline{
+    font-size:1.1rem;
+    color:#555;
+    margin-top:4px;
+  }
+  .header .contact{
+    font-size:0.9rem;
+    color:#333;
+    margin-top:6px;
+  }
+  .main {
+    display:flex;
+    margin-top:20px;
+  }
+  .left {
+    flex:0 0 32%;
+    padding-right:20px;
+  }
+  .right {
+    flex:1;
+    padding-left:20px;
+  }
+  .section {
+    margin-bottom:20px;
+  }
+  .section h2{
+    font-size:1rem;
+    text-transform:uppercase;
+    color:#2563eb;
+    border-left:4px solid #2563eb;
+    padding-left:8px;
+    margin-bottom:8px;
+  }
+  .skills-list {
+    list-style:none;
+    padding:0;
+    margin:0;
+    display:flex;
+    flex-wrap:wrap;
+    gap:6px;
+  }
+  .skills-list li{
+    background:#e0f2fe;
+    color:#0c4a6e;
+    padding:4px 8px;
+    border-radius:12px;
+    font-size:0.9rem;
+  }
+  .education, .experience, .projects {
+    background:white;
+    padding:12px;
+    border-radius:6px;
+    box-shadow:0 1px 3px rgba(0,0,0,0.1);
+  }
+  .experience-item, .project-item {
+    margin-bottom:12px;
+  }
+  .experience-item h3, .project-item h3 {
+    margin:0;
+    font-size:1rem;
+    color:#111;
+  }
+  .experience-item .role-duration {
+    font-size:0.9rem;
+    color:#666;
+  }
+  .experience-item p, .project-item p {
+    margin:4px 0 0 0;
+    font-size:0.95rem;
+    line-height:1.5;
+  }
+  .contact-block p {
+    margin:4px 0;
+    font-size:0.95rem;
+  }
+  .contact-block a {
+    color:#2563eb;
+    text-decoration:none;
+  }
+  @media print {
+    body {background:white; padding:0;}
+    .resume {max-width:100%;}
+    .header {border:none;}
+    .left, .right {padding:0;}
+    .section h2 {border:none;}
+  }
+</style>
+</head>
+<body>
+<div class="resume">
+  <header class="header">
+    <h1>Aarav Mehta</h1>
+    <div class="tagline">Computer Science Student</div>
+    <div class="contact">aarav.mehta@example.com | +91-98765-43210 | Roorkee, Uttarakhand</div>
+  </header>
+  <div class="main">
+    <aside class="left">
+      <section class="section contact-block">
+        <h2>Contact</h2>
+        <p><strong>Email:</strong> <a href="mailto:aarav.mehta@example.com">aarav.mehta@example.com</a></p>
+        <p><strong>Phone:</strong> +91-98765-43210</p>
+        <p><strong>Location:</strong> Roorkee, Uttarakhand</p>
+      </section>
+      <section class="section skills">
+        <h2>Skills</h2>
+        <ul class="skills-list">
+          <li>Python</li>
+          <li>REST APIs</li>
+          <li>SQL</li>
+          <li>Git</li>
+          <li>Basic ML</li>
+        </ul>
+      </section>
+      <section class="section education">
+        <h2>Education</h2>
+        <div class="education">
+          <h3>B.Tech Computer Science</h3>
+          <p>IIT Roorkee (expected 2026)</p>
+          <p>CGPA: 8.4</p>
+        </div>
+      </section>
+    </aside>
+    <section class="right">
+      <section class="section experience">
+        <h2>Experience</h2>
+        <div class="experience-item">
+          <h3>Summer Intern, TechBridge Labs</h3>
+          <div class="role-duration">Jun – Aug 2025</div>
+          <p>Built internal dashboards using FastAPI and PostgreSQL, improving data visibility for the team.</p>
+        </div>
+      </section>
+      <section class="section projects">
+        <h2>Projects</h2>
+        <div class="project-item">
+          <h3>Hostel Room Booking CLI (Python)</h3>
+          <p>Developed a command‑line application for campus hostel bookings; currently supports 200+ active users.</p>
+        </div>
+      </section>
+    </section>
+  </div>
+</div>
+</body>
+</html>
