@@ -1,0 +1,8 @@
+# Virtual environment (adjust name if yours is different, e.g., .venv)
+venv/
+
+# Environment variables (contains sensitive secrets/keys)
+.env
+
+# Python byte-compiled files
+__pycache__/
